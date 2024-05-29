@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+img
+{
+    max-width: 100%;
+}
+.container{
+   
+    max-width: 90vw;
+    margin: 0 auto;
+}
+/* card */
+:root {
+    --color-icon: #1C6B32;
+  }
+.card{
+    position: fixed;
+    /* position: absolute;     */
+    left: 50%;    
+    top: 50%;
+    transform:  translate(-50%,-50%);   
+    width: 500px;
+    height: 400px;
+    z-index: -4;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 25px;
+
+}
+.card-header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.icon-close{
+    cursor: pointer;
+    color: var(--color-icon);
+}
+.input-card{
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #E4F0E7;
+    
+}
+.input-card[type="text"] {
+    padding-left: 40px;
+  }
+
+ .icon-geo i{
+    position: absolute;
+    font-size: 25px;
+    left: 50px;
+    top: 80px;
+    color: var(--color-icon);
+} 
+
+.card-footer {
+    cursor: pointer;
+  gap:10px
+ }
+.card-footer p{
+   color:var(--color-icon);
+   font-size: 20px;
+   font-weight: 400;
+}
+.icon-send i{
+    color:var(--color-icon);
+    font-size: 25px;
+}
+/* header  */
+.header
+{
+    display: flex;   
+}
+.prin-header{
+
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr;  
+    place-items: center;
+    position: relative;   
+    height: 100px;
+
+}
+
+hr{
+    height: 40px;     
+    border: solid black 1px;
+    opacity: 1;
+    margin:  0 20px;
+
+}
+.menu-usuario ,.menu-ubi,.menu-logo{
+ 
+    gap: 15px;
+    position: relative;
+    
+   
+}
+.menu-ubi{
+    cursor: pointer;
+}
+.menu-ubi i, .menu-ubi p {
+  
+    color: var(--color-icon);
+}
+
+p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    
+    
+}
+i{
+    
+    font-size: 28px;
+ 
+}
+.input-comida{
+    width: 750px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+   
+}
+input::placeholder{
+    color: black;
+    padding-left:50px ;
+}
+.input-comida[type="text"]{
+     padding-left: 50px;  
+   
+}
+
+
+
+.menu-busqueda{
+    position: relative;
+   
+}
+.menu-busqueda i {
+    position: absolute;
+}
+.icon-lupa{
+right: 30px;
+cursor: pointer;
+}
+.icon-shop{
+
+    left: 16px;
+    color: var(--color-icon);
+    
+}
+.menu-usuario .icon-user{
+    color:rgb(151, 150, 150) ;
+    font-size: 30px;
+}
+.menu-usuario p {
+    font-size: 20px;
+    font-weight: 400;
+}
+ .icon-list {
+    
+    display: block;
+    margin-top: 2px;
+    padding-left: 10px;
+}
+
+.icon-car{
+    display: block;
+    padding-right: 10px;
+}
+.line-limit{
+    position: relative;
+}
+.line-limit hr{
+   
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+/* content  */
+
+.content{
+    display: flex;
+    
+}
+
+
+.Rest-Mc{
+    flex-basis: 15%;
+    
+    display: grid;
+    place-items: center;
+text-align: center;
+height: 100vh;
+
+}
+
+.logo-mc {
+  
+    width: 180px;
+    padding: 20px;
+}
+
+.titulo{
+    font-size: 25px;
+}
+.description{
+    
+    margin: 30px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+    width: 230px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    
+    gap: 20px;
+}
+.colum1{
+    flex-basis: 70%;
+   margin-left: 20px;
+   
+}
+.colum2{
+    flex-basis: 30%;
+    margin-right: 20px;
+}
+.cara1{
+    display: flex;
+   padding: 8px;
+}
+.cara1 p{
+    font-size: 15px;
+}
+.cara1 i{
+    font-size: 15px;
+    margin-left: 8px;
+}
+.bi-star-fill{
+    color: yellow;
+}
+
+.Rest-Mc h3{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.calification{
+    width: 230px;
+    height: 360px;
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    resize: none;
+    outline: none;
+}
+.menu{
+    flex-basis: 85%;
+    padding: 40px 0;
+}
+
+
+
+/* menu hamburguesas */
+.menu-hamburguesas , .menu-pollos,.menu-papas,.menu-helados{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+   
+}
+.menu .hamburguesas h2,.pollos h2,.papas h2,.helados h2{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.card-hamburguesas,.card-papas,.card-pollos ,.card-helados{
+    border: 1px solid  #D9D9D9;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;   
+ 
+}
+.card-hamburguesas img , .card-pollos img ,.card-papas img ,.card-helados img{
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 123px;
+    padding: 20px;
+}
+.card-hamburguesas i ,.card-pollos i,.card-papas i,.card-helados i{
+    position: absolute;
+    top: 45%;
+    right: 5px;
+    bottom: 0;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+.card-hamburguesas i:hover,.card-pollos i:hover,.card-papas i:hover ,.card-helados i:hover{
+   color: var(--color-icon);
+}
+.card-hamburguesas-footer ,.card-papas-footer, .card-pollos-footer,.card-helados-footer{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    
+}
+.card-hamburguesas-footer p,.card-pollos-footer p,.card-papas-footer p,.card-helados-footer p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* pollos mcCrispy */
+
+.pollos,.helados ,.papas,.hamburguesas{
+    /* padding: 60px 0; */
+    /* padding-top: 60px; */
+    margin-bottom: 30px;
+}
+.card-pollos{  
+    width:300px;
+    
+ 
+}
+
+/* footer  */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content:space-between;   
+    padding: 40px 20px ;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+.link a {
+    font-size: 20px;
+    color:  white;
+    text-decoration: none;
+   /* margin: 15px 0; */
+   padding: 10px;
+    
+
+}
+.redes ,.pago
+{
+    margin-right: 100px;
+}
+.redes p,.pago p{
+
+    padding-right: 60px;
+    color: white;
+}
+.iconos i{
+    display: inline-block;
+    color: white;
+  font-size:40px;
+padding-right: 10px;
+}
+.link a:hover, .iconos i:hover{
+    color: var(--color-icon);
+   transition: all .3s ease-in-out;
+}
+.redes .iconos{
+    margin: 20px 0;
+}
+.pago .iconos img{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.pago .iconos img:hover{
+   
+   filter: sepia(100%) saturate(1000%) hue-rotate(90deg) brightness(50%) contrast(150%);
+}
+/* linea */
+.line-limit hr{
+    border: 1px solid #D9D9D9;
+
+}
+.line-medium hr{
+    height: 100%;
+    border: 1px solid #D9D9D9;
+    position: relative;
+    top: -10px;
+}
+.icon-close:hover{
+    color: red;
+}
+
+/* carrito  */
+.container{
+    position: relative;
+}
+.card-carrito{
+    background-color: #ECEAF0;
+    width: 300px;
+  
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.icon-car{
+    cursor: pointer;
+}
+.carrito-header{
+    position: relative;
+  
+    
+}
+.carrito-header img{
+    width: 80px;
+    display: block;
+
+}
+.carrito-title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0;
+}
+.carrito-circle{
+    font-size: 25px;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+
+}
+.carrito-food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 30px 0;
+    
+}
+.carrito-food img {
+    width: 60px;
+
+}
+
+.card-buy{
+    margin:  50px 0;
+   
+}
+.card-buy a{
+    background-color: #1C6B32;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition:background-color 0.5s ease;
+}
+
+.card-buy a:hover{
+    background-color: #6dec91;
+  
+}
+/* agregar */
+.card-agregar{
+    position: fixed;
+border: 1px solid #D9D9D9;
+background-color: white;
+    left: 50%;    
+    top: 50%;
+    transform:  translate(-50%,-50%);   
+    width: 500px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.card-agregar .icon-close{
+    position: absolute;
+    right: 5px;
+}
+.bi-cart3{
+    font-size: 100px;
+    font-weight: 1000;
+    color: var(--color-icon);
+}
+.card-agregar p {
+    font-size: 25px;
+  margin: 15px 0;
+}
+.card-agregar a {
+    text-decoration: none;
+    background-color:#D9D9D9 ;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+
+}
+/* media */
+ @media(max-width:1675px)
+ {
+    /* hr{
+        display: none;
+    } */
+    .input-comida{
+        width: 650px;       
+       
+    }
+    .colum-1,.colum-3{
+        gap: 25px;
+    }
+    .menu-usuario ,.menu-ubi,.menu-logo{
+ 
+        gap: 25px;
+        position: relative;       
+       
+    }
+ }
+    
+ @media(max-width:1493px)
+ {
+    .input-comida{
+        width: 550px;       
+       
+    }
+    .menu-usuario ,.menu-ubi,.menu-logo{
+ 
+        gap: 15px;
+        position: relative;       
+       
+    }
+    .menu-usuario{
+        
+        justify-content: space-around;
+    }
+    .colum-1{
+        gap: 15px;
+    }
+    .colum-3{
+        gap: 55px;
+    }
+ }
+ @media(max-width:1355px)
+ {
+    
+    .colum-3{
+        gap: 35px;
+    }
+    .icon-down i{
+        display: none;
+    }
+ }
+ @media(max-width:1355px)
+ {
+    
+    .colum-3{
+        gap: 25px;
+    }
+  
+    .colum-1{
+        gap: 30px;
+    }
+    .menu-logo{
+        gap:30px;
+    }
+    .icon-car , .icon-list
+    {
+        padding: 0;
+    }
+ }
+   
+ @media(max-width:1302px)
+ {
+    
+   
+     .menu-ubi p, .menu-usuario p {
+        display: none;
+    } 
+   .colum-3{
+    gap: 50px;
+   }
+ }
+ @media(max-width:1095px)
+ {
+    
+   
+ 
+   .colum-3{
+    gap: 15px;
+   }
+   .colum-1{
+    gap: 15px;
+}
+.menu-logo{
+    gap:15px;
+}
+ }
+
+ @media(max-width:1026px)
+ {
+    
+    .input-comida{
+        width: 500px;       
+       
+    }
+    .content .menu-restaurantes img {
+        width: 120px;
+    }
+ }
+   
+   
+   
+   
